@@ -8,13 +8,11 @@ import org.junit.jupiter.params.provider.CsvSource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.jdbc.Sql;
 import org.springframework.test.context.junit.jupiter.SpringJUnitConfig;
-
-import com.jdc.tx.demo.ApplicationConfig;
 import com.jdc.tx.demo.model.TransferService;
 import com.jdc.tx.demo.model.dto.TransferForm;
 
 @Sql("/initialize.sql")
-@SpringJUnitConfig(classes = ApplicationConfig.class)
+@SpringJUnitConfig(locations = "/application.xml")
 public class TransferOperationTest {
 
 	@Autowired
