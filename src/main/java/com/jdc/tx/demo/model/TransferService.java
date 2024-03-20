@@ -1,4 +1,4 @@
-package com.jdc.tex.demo.model;
+package com.jdc.tx.demo.model;
 
 import org.springframework.transaction.annotation.Transactional;
 
